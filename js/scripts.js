@@ -19,6 +19,10 @@ function Address(street, city, state, zip) {  // parameters
   this.zip = zip;
 }
 
+// Ptototype for Address
+Address.prototype.fullAddress = function() {
+  return this.street + ", " + this.city + ", " + this.state + ", " +this.zip;
+}
 
 // User Interface Logic
 $(document).ready(function() {
