@@ -1,15 +1,28 @@
+// Business Logic
+// Constructor for Contact
 function Contact(firstName,lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.address = [];
 }
 
+// Prototype for fullName: concatonating firstName + lastName
 Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
 
+// Constructor for Address
+function Address(street, city, state, zip) {  // parameters
+  this.street = street;                       // properties
+  this.city = city;
+  this.state = state;
+  this.zip = zip;
+}
+
+
+// User Interface Logic
 $(document).ready(function() {
-  $("form.ggg").submit(function(event) {
+  $("form.contactForm").submit(function(event) {
 
 
     var inputtedFirstName = $("input.firstName").val();
