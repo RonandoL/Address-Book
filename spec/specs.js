@@ -3,7 +3,7 @@ describe('Contact', function() {
     var testContact = new Contact("Mollie", "Bootsma");
     expect(testContact.firstName).to.equal("Mollie");
     expect(testContact.lastName).to.equal("Bootsma");
-    expect(testContact.address).to.eql([]);
+    expect(testContact.addresses).to.eql([]);
   });
 
   // Prototype
